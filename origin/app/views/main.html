@@ -1,0 +1,22 @@
+<div class="jumbotron jumbotron-center">
+  <h1>'Allo, 'Allo!</h1>
+  <p class="lead">
+    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
+    Always a pleasure serving you. All the Best! 
+  </p>
+</div>
+
+<div ng-repeat="item in questions" class="jumbotron">
+  <h4>{{$index+1}}. {{item.Question}}</h4>
+  <ol type="A">
+    <li>{{item['Choice A']}}</li>
+    <li>{{item['Choice B']}}</li>
+    <li>{{item['Choice C']}}</li>
+    <li>{{item['Choice D']}}</li>
+  </ol>
+  <p>
+    Answer: {{item.Answer}}
+  </p>
+  <hr>
+  <small>{{item.Subject}}</small>
+</div>
