@@ -7,22 +7,12 @@
   <!--<p><a class="btn btn-lg btn-success" ng-href="#">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>-->
 </div>
 
-<div ng-repeat="item in questions" class="row marketing">
-  <h4>{{$index+1}}. {{item.Question}}</h4>
-  <ol type="A">
-    <li>{{item['Choice A']}}</li>
-    <li>{{item['Choice B']}}</li>
-    <li>{{item['Choice C']}}</li>
-    <li>{{item['Choice D']}}</li>
-  </ol>
-  <p>
-    Answer: {{item.Answer}}
-  </p>
-  <small>{{item.Subject}}</small>
-  <!--<p><a class="btn btn-lg btn-success" ng-href="#">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>-->
-</div>
+<ul ng-repeat="item in questions">
+      <li>{{item.Question}}</li>
+</ul>
 
 <div class="row marketing">
+  <h4>HTML5 Boilerplate</h4>
   <p>
     HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
   </p>
