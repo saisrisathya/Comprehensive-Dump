@@ -4,7 +4,6 @@
   "dependencies": {
     "angular": "~1.2.0",
     "json3": "~3.3.1",
-    "es5-shim": "~3.1.0",
     "bootstrap": "~3.2.0",
     "angular-resource": "~1.2.0",
     "angular-animate": "~1.2.0",
@@ -12,9 +11,6 @@
     "angular-route": "~1.2.0",
     "angular-bootstrap": "~0.11.2",
     "bootstrap-material-design": "~0.0.8"
-  },
-  "ignore": {
-    
   },
   "devDependencies": {
     "angular-mocks": "~1.2.0",
