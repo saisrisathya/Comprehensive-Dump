@@ -342,7 +342,7 @@ module.exports = function (grunt) {
       }
     },
 
-    
+
     // Run some tasks in parallel to speed up the build process
     concurrent: {
       server: [
@@ -418,4 +418,11 @@ module.exports = function (grunt) {
     'test',
     'build'
   ]);
+
+  grunt.registerTask('heroku', [
+    'compass:dist',
+    'autoprefixer',
+    'imagemin'
+  ]);
+  
 };
